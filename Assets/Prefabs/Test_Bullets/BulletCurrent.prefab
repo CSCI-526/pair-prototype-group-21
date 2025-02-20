@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.7106918, g: 0.7106918, b: 0.7106918, a: 1}
+  m_Color: {r: 1, g: 0.5707547, b: 0.5707547, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -172,6 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletType: Current
-  speed: 3.88
-  lifeTime: 3
+  speed: 4
+  lifeTime: 2
   direction: {x: 1, y: 0}

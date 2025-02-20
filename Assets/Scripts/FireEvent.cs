@@ -4,41 +4,44 @@ using UnityEngine;
 
 public class FireEvent : MonoBehaviour
 {
-    public GameObject bulletPrefabA;
-    public GameObject bulletPrefabB;
+    public GameObject bulletPrefabA;  // Bullet for first round
+    public GameObject bulletPrefabB;  // Bullet for second round
 
     public Transform firePoint;
-
     public float fireRate = 0.2f;
     private float nextFireTime;
 
-    // Start is called before the first frame update
+    private int round = 1;  // Track the current round, default is round 1
+
     void Start()
     {
-
+        // Add any necessary initialization if required
+        round = PlayerPrefs.GetInt("round", 1);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-            if (Input.GetKey(KeyCode.Z) && Time.time >= nextFireTime)
+        // Check if space key is pressed and it's time to shoot based on fire rate
+        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFireTime)
+        {
+            
+            Debug.Log("FireEvent -- Current Round: " + round);
+            // Fire bullets based on the round
+            if (round == 1)
             {
-                ShootBullet(bulletPrefabA);
-                nextFireTime = Time.time + fireRate;
-            }   
-
-            if (Input.GetKey(KeyCode.X) && Time.time >= nextFireTime)
-            {
-                ShootBullet(bulletPrefabB);
-                nextFireTime = Time.time + fireRate;
+                ShootBullet(bulletPrefabA);  // First round bullet
             }
-
- 
+            else if (round == 2)
+            {
+                ShootBullet(bulletPrefabB);  // Second round bullet
+            }
+            nextFireTime = Time.time + fireRate;
+        }
     }
 
     void ShootBullet(GameObject bulletPrefab)
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+
 }

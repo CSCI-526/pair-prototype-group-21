@@ -8,6 +8,9 @@ TagManager:
   - Ghost
   - Breakable
   - Unbreakable
+  - Ability
+  - Door
+  - Key
   layers:
   - Default
   - TransparentFX
