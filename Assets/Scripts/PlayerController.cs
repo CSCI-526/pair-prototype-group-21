@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         if (recordedPositions.Count > 0 && ghostExists)  // 2nd round with the ghost
         {
             Debug.Log("Enters second round");
-            PlayerPrefs.SetInt("round", 2);  // round set
+            //PlayerPrefs.SetInt("round", 2);  // round set
 
             transform.position = new Vector3(-8, 0, 0); // change the position a little to avoid collision
             StartGhostReplay();
@@ -53,7 +53,8 @@ public class PlayerController : MonoBehaviour
             ghostExists = true;
             isReplaying = false;
             isRecording = false;
-            
+
+            PlayerPrefs.SetInt("round", 2);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // scene reload
         }
         else  // collide and crashes
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Key"))
         {
             hasKey = true;
+            GameManager.Instance.AddKey();
             Destroy(other.gameObject); // destroy the key after collected
             Debug.Log("Key has collected");
         }
@@ -81,6 +83,8 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Success!");
             //GameManager.Instance.LevelComplete(); // 调用 GameManager 处理通关
+            PlayerPrefs.SetInt("round", 1);
+            GameManager.Instance.PlayerWins(); // 调用通关函数
         }
     
     }
@@ -128,5 +132,6 @@ public class PlayerController : MonoBehaviour
 
         // finish replaying
         isReplaying = false;
+        ghostExists = false;
     }
 }
