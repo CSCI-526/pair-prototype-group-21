@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.957, y: -9.92}
+  m_AnchoredPosition: {x: -4.4, y: -3.2}
   m_SizeDelta: {x: 27.431, y: 7.289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42453314
@@ -1815,7 +1815,7 @@ Transform:
   m_GameObject: {fileID: 854979373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.79, y: 1.26, z: 0}
+  m_LocalPosition: {x: 9.79, y: 1.26, z: 0}
   m_LocalScale: {x: 0.72894, y: 0.72894, z: 0.72894}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2242,7 +2242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 396, y: -291}
+  m_AnchoredPosition: {x: 252, y: -231}
   m_SizeDelta: {x: 295.78528, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347859075
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Keys Obtained: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3079,7 +3079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657427658504408913, guid: aafc70438105a5244ae034312e029040, type: 3}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3657427658504408913, guid: aafc70438105a5244ae034312e029040, type: 3}
       propertyPath: ghostPrefab
@@ -3152,19 +3152,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2363895842616241099, guid: c9ea93cc388f6a340b51acdff505a323, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.57430047
+      value: 0.67329824
       objectReference: {fileID: 0}
     - target: {fileID: 2363895842616241099, guid: c9ea93cc388f6a340b51acdff505a323, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.592293
+      value: 7.900936
       objectReference: {fileID: 0}
     - target: {fileID: 2363895842616241099, guid: c9ea93cc388f6a340b51acdff505a323, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8487
+      value: 2.8982
       objectReference: {fileID: 0}
     - target: {fileID: 2363895842616241099, guid: c9ea93cc388f6a340b51acdff505a323, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3462
+      value: 0.0275
       objectReference: {fileID: 0}
     - target: {fileID: 2363895842616241099, guid: c9ea93cc388f6a340b51acdff505a323, type: 3}
       propertyPath: m_LocalPosition.z

@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour
 
     public string bulletType;
 
-    public float speed = 10f;
+    public float speed = 15f;
     public float lifeTime = 3f;
     public Vector2 direction = Vector2.right;
 

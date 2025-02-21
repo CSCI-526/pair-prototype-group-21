@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
     {
         isReplaying = true;
         GameObject ghost = Instantiate(ghostPrefab, recordedPositions[0], Quaternion.identity);
+        ghost.transform.Rotate(0, 0, -90);
         Rigidbody2D rb = ghost.GetComponent<Rigidbody2D>();
         //rb.gravityScale = 0;
 

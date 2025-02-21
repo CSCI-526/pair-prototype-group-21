@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         winPanel.SetActive(true); // 显示通关 UI
         Time.timeScale = 0; // 暂停游戏
-        winPanel.GetComponent<Button>().interactable = true; // 允许交互
+        //winPanel.GetComponent<Button>().interactable = true; // 允许交互
         gamePaused = true;
     }
 
